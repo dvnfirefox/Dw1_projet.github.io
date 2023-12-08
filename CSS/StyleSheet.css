@@ -5,5 +5,14 @@ body
 }
 p
 {
- color: whitesmoke;
+    color: whitesmoke;
+}
+h1
+{
+    color: whitesmoke;
+    text-align: center;
+}
+form
+{
+    text-align: center;
 }
