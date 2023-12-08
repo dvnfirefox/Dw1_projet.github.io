@@ -1,6 +1,6 @@
 body
 {
-    background-image: url('.image/background_accueil.jpg');
+    background-image: url('background_accueil.jpg');
     background-size: cover;
 }
 p
