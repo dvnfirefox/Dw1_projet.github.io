@@ -7,12 +7,28 @@
 </head>
 <body>
 <h1>Formulaire demande de d'horoscope</h1>
-<form name="Formulaire" action="UneAction" method="post">
-    <p>Nom : <input type="text"/> </p>
-    <p>Prenom : <input type="text"/></p>
+<div id="form">
+    <form name="Formulaire" action="UneAction" method="post">
+        <p>Nom : <input type="text" name="nom" id="nom"/></p>
+        <p>Prenom : <input type="text" name="prenom" id="prenom"/></p>
+        <p>Date de naissance<input type="date" name="naissance" id="naissance"></p>
+        <p>Signe Zodiaque<select name="Zodiaque" id="zodiaque">
+            <option value="belier" selected> bélier</option>
+            <option value="taureau"> Taureau</option>
+            <option value="gemeaux"> Gémeaux</option>
+            <option value="cancer"> Cancer</option>
+            <option value="lion"> Lion</option>
+            <option value="vierge"> Vierge</option>
+            <option value="balance"> Balance</option>
+            <option value="scorpion"> Scorpion</option>
+            <option value="sagittaire"> Sagittaire</option>
+            <option value="capricorne"> Capricorne</option>
+            <option value="verseau"> Verseau</option>
+            <option value="poisson"> Poisson</option>
+        </select></p>
 
 
-</form>
-
+    </form>
+</div>
 </body>
 </html>

@@ -16,3 +16,11 @@ form
 {
     text-align: center;
 }
+#form
+{
+
+    width: 300px;
+    background-color: rgb(0,3,26);
+    border-style: solid;
+
+}
