@@ -2,6 +2,15 @@ body
 {
     background-image: url(../image/background_accueil.jpg);
     background-size: cover;
+    color: whitesmoke;
+}
+header
+{
+    border-style: solid;
+    border-color: goldenrod;
+    border-radius: 10px;
+    height:100px;
+    background-color: rgb(0,3,40);
 }
 p
 {
@@ -20,7 +29,35 @@ form
 {
 
     width: 300px;
-    background-color: rgb(0,3,26);
+    background-color: rgb(0,3,40);
     border-style: solid;
 
+}
+#logo
+{
+    float: left;
+    clear: none;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-left: 3px;
+}
+.containerHeader
+{
+
+}
+.itemHeader
+{
+    display: inline-block;
+    border: 3px solid goldenrod;
+    border-radius: 10px;
+    height: 95px;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.textHeader
+{
+    position: relative;
+    top: 25%;
+    font-weight: bold;
 }
