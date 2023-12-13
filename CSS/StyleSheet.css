@@ -43,21 +43,20 @@ form
 }
 .containerHeader
 {
-
+    height: 95px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 .itemHeader
 {
     display: inline-block;
     border: 3px solid goldenrod;
     border-radius: 10px;
-    height: 95px;
     text-align: center;
+    height: 88%;
     padding-left: 5px;
     padding-right: 5px;
-}
-.textHeader
-{
-    position: relative;
-    top: 25%;
-    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom 5px;
 }
