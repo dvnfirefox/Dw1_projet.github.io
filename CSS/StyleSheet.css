@@ -31,15 +31,18 @@ nav
 }
 main
 {
-    background-color:darkred;
 }
 footer
 {
+    grid-display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10vh;
     border-style: solid;
     border-color: goldenrod;
     border-radius: 10px;
     height:10vh;
     background-color: rgb(0,3,40);
+
 }
 p
 {
@@ -72,6 +75,23 @@ form
     width: 10vh;
     height: 10vh;
 }
+#footerDroit
+{
+    display: inline-block;
+    width: 48%;
+    height: 100%;
+    padding-left: 10px;
+
+}
+#footerInfo
+{
+    display: inline-block;
+    width:48%;
+    height: 100%;
+    text-align: center;
+    padding-right: 10px;
+}
+
 .containerHeader
 {
     height: 10.1vh;
@@ -110,3 +130,10 @@ form
     margin-top: 5px;
     margin-bottom 5px;
 }
+.footerContainer
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
