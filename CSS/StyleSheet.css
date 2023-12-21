@@ -4,43 +4,46 @@ body
     width: 100%;
     display: grid;
     grid-template-columns: 16vh 0.99fr;
-    grid-template-rows: auto auto 15vh;
+    grid-template-rows: 10.5vh 75vh 10.5vh;
+    grid-template-areas:
+        "header header"
+        "nav main"
+        "nav footer";
     background-image: url(../image/background_accueil.jpg);
     background-size: cover;
     color: whitesmoke;
 }
 header
 {
-    grid-column: span 2;
+    grid-area: header;
     border-style: solid;
     border-color: goldenrod;
     border-radius: 10px;
-    height:10vh;
     background-color: rgb(0,3,40);
 }
 nav
 {
-    grid-row: span 2;
+    grid-area:nav;
     border-style: solid;
     border-color: goldenrod;
     border-radius: 10px;
     width:15vh;
     background-color: rgb(0,3,40);
-    height: 80vh;
     margin-right: 2px;
 }
 main
 {
+    grid-area: main;
 }
 footer
 {
+    grid-area:footer;
     grid-display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 10vh;
     border-style: solid;
     border-color: goldenrod;
     border-radius: 10px;
-    height:10vh;
     background-color: rgb(0,3,40);
 
 }
@@ -57,12 +60,22 @@ form
 {
     text-align: center;
 }
+strong{
+    text-font: 30px;
+}
+ul{
+    list-style-type: none;
+}
 #form
 {
-
+    border-style: solid;
+    border-color: goldenrod;
+    border-radius: 10px;
     width: 300px;
     background-color: rgb(0,3,40);
-    border-style: solid;
+    margin: auto;
+    padding: 5px;
+
 
 }
 #logo
@@ -75,13 +88,31 @@ form
     width: 10vh;
     height: 10vh;
 }
+#accueilLogo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 100%;
+}
 #footerDroit
 {
     display: inline-block;
     width: 48%;
-    height: 100%;
-    padding-left: 10px;
+    text-align: left;
+    padding-left: 20px;
 
+}
+#containerHoroscope{
+display: flex;
+    width: 0.98fr;
+}
+#containerGHoroscope{
+    width: 45%;
+    float: left;
+}
+#containerDHoroscope{
+    float: left;
 }
 #footerInfo
 {
@@ -135,5 +166,14 @@ form
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+}
+.horoscope{
+    display: flex;
+    align-items: center;
+}
+.horoscopeImg{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
 }
 
